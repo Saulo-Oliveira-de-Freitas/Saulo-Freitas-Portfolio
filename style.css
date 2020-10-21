@@ -1,0 +1,440 @@
+@import url("https:fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header{
+background-color: #000000;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+
+header.sticky{
+    padding: 20px 100px;    
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1)
+}
+
+header .Logo{
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    position: relative;
+   list-style: none;
+}
+
+header ul li a {
+   position: relative; 
+   display: inline-block;
+   margin: 0 15px;
+   color: #fff;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+header ul li a:hover{
+    color: #fc8f00;
+}
+
+section{
+    padding: 100px;
+}
+
+.ImgSaulo{
+    display: flex;
+
+}
+
+.Banner{
+    position: relative;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid rgba(0,0,0,0.2) ;
+     
+}
+
+.Banner h2{
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.Banner h2 span{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.Banner h3{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.Button{
+    position: relative;
+    background: #fc8f00;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font: 18px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.Button:hover{
+    transform: scale(1.05);
+    background: #db7d01;
+}
+
+.Heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.Heading h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.Content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.ContentBox h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.W50{
+max-width: 50%;
+}
+
+Img{
+    
+    display: flex;
+    max-width: 75%;
+    margin-left: 20px;}
+
+.Servicos{
+    background: #111;
+}
+
+.Heading.White{
+   color: #fff; 
+}
+
+.Servicos .Content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.Servicos .Content .ServicosBox{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.Servicos .Content .ServicosBox:hover {
+    background: #fc8f00;
+}
+.Servicos .Content .ServicosBox img{
+    max-width: 80px;
+    filter: invert(1);
+    justify-content: center;
+    align-items: center;
+}
+
+.Servicos .Content .ServicosBox h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.Projetos .Content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Projetos .Content .ProjetosBox{
+    width: 50%;
+    padding: 10px;
+}
+
+.Projetos .Content .ProjetosBox img{ 
+ max-width: 75%;
+ 
+}    
+
+.Contato{
+    background: #111;
+}
+
+.Contato .Content .InfoContato{
+    color: #fff;
+    margin-bottom: 16px ;
+}
+
+
+.Contato .Content .InfoContatoBox h3 {
+color: #fff;
+margin-bottom: 4px;
+}
+
+.Contato .Heading{
+    color: #fff;
+}
+
+.Contato .Content .InfoContato p {
+    color: #fff;
+    margin-left: 16px;
+    }
+
+.FormBox{
+    min-width: 60%;
+}
+    
+.FormBox form h3{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.FormBox form{
+    display: flex;
+    flex-direction: column;
+}
+
+.FormBox form input,
+.FormBox form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none ;
+    
+}
+
+.FormBox form textarea{
+min-height: 200px;
+}
+
+.FormBox form input[type = "submit"]{
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.InfoContato{
+    min-width: 40%;
+}
+
+.InfoContatoBox{
+    position: relative;
+    padding: 20px 0;
+}
+footer{
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    
+}    
+
+@media(max-width: 991px){
+
+   header,header.sticky{
+       padding: 20px 50px;
+       z-index: 1000;
+   } 
+
+   .Menu{
+       position: fixed;
+       top: 75px;
+       left: -100%;
+       display: block;
+       padding: 100px 50px;
+       text-align: center;
+       width: 100%;
+       height: 100vh;
+       background: #111;
+       transition: 0.3s;
+       z-index: 999; 
+       border-top:2px solid rgba(0,0,0,0.2) ;
+   }
+
+   .Menu.active{
+  left: 0;
+   }
+
+   header ul li a{
+       font-size: 24px;
+       margin: 10px;
+   }
+
+   .Toggle{
+       width: 40px;
+       height: 40px;
+       background: url(images/menu.png) ;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: 30px;
+       cursor: pointer;
+   }
+
+   .Toggle.active{
+    width: 40px;
+    height: 40px;
+    background: url(images/close.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+    }
+    section{
+    padding: 100px 50px;
+    }
+    .Banner{
+        padding: 150px 50px 100px;
+    }
+
+    .Banner h2,.Banner h3{
+        font-size: 1.5em;
+    }
+
+    .ImgSaulo{
+        display: flex;
+        max-width: 50%;
+    }
+
+    .Button{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .Heading h2{
+    
+        font-size: 24px;
+    }
+
+    .ContentBox h3{
+        font-size: 20px;
+    }
+
+    .ContentBox{
+        max-width: calc(100%-20px);
+        padding: 40 20px;
+        margin: 10px;
+    }
+
+    .Content{
+        flex-direction: column;
+    }
+     .SobreBox{
+        
+            display: flex;
+            justify-content: space-between ;
+            align-items: center;
+            flex-direction: row;
+            padding: 20px 18px;
+        
+     }   
+
+    .W50{
+        margin-bottom: 20px;
+        max-width: 100%;
+       
+    }
+
+    .Servicos .Content .ServicosBox{
+        margin: 10px;
+    }
+
+    .Projetos .Content .ProjetosBox{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .InfoContato{
+        margin: 20px 0;
+    }
+   }
+
+
+@media(max-width: 600px){
+    header,header.sticky{
+        padding: 20px 20px;
+        z-index: 1000;
+    }
+
+    .Banner{
+        padding: 150px 50px 100px;
+    }
+
+    section{
+        padding: 100px 20px ;
+    }
+ 
+    
+}   
+
+
+@media(min-width: 992px){
+    .ImgSaulo{
+        max-width: 33%;
+    }
+
+    .SobreBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 120px;
+    }
+
+    .W50{
+        max-width: 40%;
+    }
+
+}    
