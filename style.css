@@ -253,6 +253,18 @@ Img{
     padding: 0px 0;
 }
 
+
+.ms-2 a {
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.ms-2 a:hover{
+    color: #fc8f00;
+}
+
+
 @media(max-width: 1024px){
 
    header,header.sticky{
@@ -427,8 +439,7 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        color: white;
-        margin-bottom: 100px;
+        color: white; 
         border: none;
     }
     
@@ -486,13 +497,4 @@ footer {
         font-size: medium;
     }
 
-    .ms-2 a {
-        color: #fff;
-        text-decoration: none;
-        transition: .3s;
-    }
-
-    .ms-2 a:hover{
-        color: #fc8f00;
-    }
 }    
