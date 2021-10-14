@@ -265,7 +265,9 @@ Img{
 }
 
 
-@media(max-width: 1024px){
+
+
+@media(max-width: 991px){
 
    header,header.sticky{
        padding: 20px 50px;
@@ -428,7 +430,10 @@ footer {
         display: block;
 
     }
-
+    
+    .ServicosBox p{
+        font-weight: 400;
+    }
     .sobreImg{
         margin-top: 2.5rem;
     }
