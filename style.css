@@ -264,6 +264,32 @@ Img{
     color: #fc8f00;
 }
 
+p-2 i{
+    background-color: linear-gradient(to right, #0ee951, #00dabf);
+}
+
+footer {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: black;
+    
+    font-size: 12px;
+  }
+  
+  footer li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+  }
+
+  footer li a:hover{
+      color: #fc8f00;
+      
+  }
 
 
 
@@ -382,34 +408,13 @@ Img{
         padding: 10px;
     }
 
+    
     .InfoContato{
         margin: 20px 0;
     }
    }
 
    
-footer {
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 30px;
-    background-color: black;
-    
-    font-size: 12px;
-  }
-  
-  footer li a {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    transition: .3s;
-  }
-
-  footer li a:hover{
-      color: #fc8f00;
-      
-  }
 
 
 @media(max-width: 600px){
