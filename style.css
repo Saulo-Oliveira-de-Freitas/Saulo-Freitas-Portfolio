@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+li a{
+    text-decoration: none;
+}
+
 header{
 background-color: #000000;
     position: fixed;
@@ -137,8 +141,30 @@ section{
     margin-bottom: 10px;
 }
 
+#contato{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contat li{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+    
+}
+
 .W50{
 max-width: 50%;
+
+}
+
+.sobreImg{
+    border-radius: 50%;
 }
 
 Img{
@@ -207,26 +233,14 @@ Img{
 .Contato{
     background: #111;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    
-}
-
-.Contato .Content .InfoContato{
-    color: #fff;
-    margin-bottom: 0px ;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    vertical-align: middle;
 }
 
 
-.Contato .Content .InfoContatoBox h3 {
-color: #fff;
-margin-bottom: 4px;
-}
 
 .Contato .Heading{
     color: #fff;
@@ -246,13 +260,6 @@ margin-bottom: 4px;
     position: relative;
     padding: 0px 0;
 }
-footer{
-    background: #111;
-    color: #fff;
-    text-align: center;
-    padding: 7px;
-    
-}    
 
 @media(max-width: 991px){
 
@@ -327,8 +334,7 @@ footer{
     }
 
     .Heading h2{
-    
-        font-size: 24px;
+     font-size: 24px;
     }
 
     .ContentBox h3{
@@ -353,6 +359,9 @@ footer{
             padding: 20px 18px;
         
      }   
+     .sobreImg{
+         margin-left: 5rem;
+     }
 
     .W50{
         margin-bottom: 20px;
@@ -374,6 +383,60 @@ footer{
     }
    }
 
+   .contat {
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    margin-bottom: 100px;
+    border: none;
+  }
+
+.cont {
+width: auto;
+margin: 0 auto;
+border: none;
+}
+
+.cont li {
+display: flex;
+flex-direction: row;
+color: #fff;
+text-align: center;
+justify-content: center;
+width: 15%;
+vertical-align: top;
+padding: 40px 60px;
+margin: 0 2%;
+box-sizing: border-box;
+text-decoration: none;
+}
+
+   
+footer {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: black;
+    
+    font-size: 12px;
+  }
+  
+  footer li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+  }
+
+  footer li a:hover{
+      color: #fc8f00;
+      
+  }
+
 
 @media(max-width: 600px){
     header,header.sticky{
@@ -389,10 +452,45 @@ footer{
         padding: 100px 20px ;
     }
 
+    .SobreBox{
+        display: block;
+
+    }
+
+    .sobreImg{
+        margin-top: 2.5rem;
+    }
+
     .Contato{
         width: 100%;
+        background-color: #0f0f0f;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: white;
+        margin-bottom: 100px;
+        border: none;
     }
- 
+    
+    .InfoContatoBox {
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+  
+  
+
+    .Heading{
+        font-size: .9rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: .5rem;
+    }
+
+    footer{
+        font-size: smaller;
+    }
     
 }   
 
@@ -412,6 +510,11 @@ footer{
 
     .W50{
         max-width: 40%;
+    }
+
+     
+    .sobreImg{
+        margin-left: 5rem;
     }
 
 }    
