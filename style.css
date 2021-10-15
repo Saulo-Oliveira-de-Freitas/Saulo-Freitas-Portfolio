@@ -1,5 +1,9 @@
 @import url("https:fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
+:root{
+    --gradient:(linear-gradient(to right, #0ee951,  #00dabf))
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -117,6 +121,7 @@ section{
 .Button:hover{
     transform: scale(1.05);
     background: #db7d01;
+    text-decoration: none;
 }
 
 .Heading{
@@ -178,11 +183,11 @@ Img{
 }
 
 .Servicos .Content .ServicosBox{
-    padding: 40px 20px;
+    padding: 20px 20px;
     background: #222;
     color: #fff;
-    max-width: 340px;
-    margin: 20px;
+    max-width: 300px;
+    margin: 10px;
     text-align: center;
     transition: 0.5s;
 }
@@ -192,7 +197,7 @@ Img{
 }
 .Servicos .Content .ServicosBox img{
     max-width: 80px;
-    filter: invert(1);
+
     justify-content: center;
     align-items: center;
 }
@@ -260,13 +265,11 @@ Img{
 .ms-2 a:hover{
     color: #fc8f00;
 }
-.devicon-github-original{
+.devicon{
     font-size: 3rem;
 }
 
-.devicon-linkedin-plain{
-    font-size: 3rem;
-}
+
 footer {
     color: #fff;
     display: flex;
