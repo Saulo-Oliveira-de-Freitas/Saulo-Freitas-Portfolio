@@ -151,9 +151,6 @@ max-width: 50%;
 
 }
 
-.SobreBox p{
-    
-}
 
 .sobreImg{
     border-radius: 50%;
@@ -263,11 +260,13 @@ Img{
 .ms-2 a:hover{
     color: #fc8f00;
 }
-
-p-2 i{
-    background-color: linear-gradient(to right, #0ee951, #00dabf);
+.devicon-github-original{
+    font-size: 3rem;
 }
 
+.devicon-linkedin-plain{
+    font-size: 3rem;
+}
 footer {
     color: #fff;
     display: flex;
@@ -406,6 +405,8 @@ footer {
     .Projetos .Content .ProjetosBox{
         width: 100%;
         padding: 10px;
+        
+
     }
 
     
@@ -458,9 +459,6 @@ footer {
         flex-direction: row;
     }
 
-    
-  
-  
 
     .Heading{
         font-size: .9rem;
@@ -508,3 +506,17 @@ footer {
     }
 
 }    
+
+@media (min-width: 767px ){
+    .Projetos .Content .ProjetosBox {
+     
+        justify-content: center;
+        align-items: center;
+        width: 110%;
+    }
+    
+    .Projetos .Content{
+        display: flex;
+        flex-direction: row;
+    }
+}
