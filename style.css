@@ -125,7 +125,7 @@ section{
 .Button:hover{
     transform: scale(1.05);
     background: #db7d01;
-    text-decoration: none;
+    color: #fff;
 }
 
 .Heading{
