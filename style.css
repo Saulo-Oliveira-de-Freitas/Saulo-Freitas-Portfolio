@@ -70,6 +70,12 @@ section{
     padding: 100px;
 }
 
+.Sobre{
+    background-color: #222;
+}
+
+.Sobre h2,p{color: #fff;}
+
 .ImgSaulo{
     display: flex;
 
@@ -203,6 +209,11 @@ Img{
 .Servicos .Content .ServicosBox h2{
     font-size: 24px;
     font-weight: 600;
+}
+
+.Projetos{
+    background-color: #222;
+    color: #fff;
 }
 
 .Projetos .Content{
