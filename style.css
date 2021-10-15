@@ -1,8 +1,6 @@
 @import url("https:fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
-:root{
-    --gradient:(linear-gradient(to right, #0ee951,  #00dabf))
-}
+
 
 * {
   margin: 0;
@@ -217,6 +215,7 @@ Img{
 .Projetos .Content .ProjetosBox{
     width: 50%;
     padding: 10px;
+    
 }
 
 .Projetos .Content .ProjetosBox img{ 
@@ -407,7 +406,8 @@ footer {
 
     .Projetos .Content .ProjetosBox{
         width: 100%;
-        padding: 10px;
+        justify-content: center;
+        align-items: center;
         
 
     }
@@ -432,7 +432,7 @@ footer {
     }
 
     section{
-        padding: 100px 20px ;
+        padding: 90px 20px ;
     }
 
     .SobreBox{
@@ -445,6 +445,13 @@ footer {
     }
     .sobreImg{
         margin-top: 2.5rem;
+    }
+
+    .Projetos .Content .ProjetosBox{
+        width: 100%;
+        padding: 10px;
+        padding-left: 80px;
+        
     }
 
     .Contato{
@@ -474,6 +481,11 @@ footer {
         font-size: smaller;
     }
     
+    .W50 {
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+    }
 }   
 
 
