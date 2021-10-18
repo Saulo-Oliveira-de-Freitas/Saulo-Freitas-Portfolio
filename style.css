@@ -43,7 +43,7 @@ header .Logo{
     
 }
 
-header .Logo:hover{
+header .Logo a:hover{
     color: #fc8f00;
 }
 
