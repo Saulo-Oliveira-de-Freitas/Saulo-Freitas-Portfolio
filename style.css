@@ -74,6 +74,14 @@ header ul li a:hover{
 section{
     padding: 100px;
 }
+.TextBox{
+    padding-right: 2rem ;
+    
+}
+
+.Banner{
+    justify-content:space-between   
+}
 
 .Sobre{
     background-color: #222;
@@ -113,6 +121,11 @@ section{
     font-weight: 500;
 }
 
+.BannerImg{
+    width: 70%;
+padding-left: 80px;
+    
+}
 .Button{
     position: relative;
     background: #fc8f00;
@@ -125,6 +138,25 @@ section{
     letter-spacing: 1px;
     font-weight: 500;
     transition: .3s;
+}
+
+
+.ButtonSimple{
+    position: relative;
+    background: #fc8f00;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font: 18px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    
+}
+
+.ButtonSimple:hover{
+    color:#fff;
 }
 
 .Button:hover{
@@ -168,13 +200,11 @@ max-width: 50%;
 
 .sobreImg{
     border-radius: 50%;
-}
-
-Img{
-    
     display: flex;
     max-width: 75%;
-   }
+}
+
+
 
 .Servicos{
     background: #111;
@@ -221,11 +251,46 @@ Img{
     color: #fff;
 }
 
-.Projetos .Content{
+
+.Cards {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    /* Put a card in the next row when previous cards take all width */
+    flex-wrap: wrap;
+
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.cards__item {
+    /* There will be 4 cards per row */
+    flex-basis: 20%;
+
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+.card {
+    max-width: 20rem;
+    flex-direction: row;
+}
+
+.card__cover {
+    height: 13rem;
+    width: 20rem;
+}
+.card__cover img{
+    width:99%;
+    height: 150px;
+}
+.card__content {
+    /* Take available height */
+    flex: 1;
     
+}
+.card__content p,h5{
+    color: #111
 }
 
 .Projetos .Content .ProjetosBox{
@@ -364,11 +429,17 @@ footer {
     padding: 100px 50px;
     }
     .Banner{
-        padding: 150px 50px 100px;
+        padding: 100px 50px 100px;
+        flex-direction: column;
     }
 
     .Banner h2,.Banner h3{
         font-size: 1.5em;
+    }
+
+    .BannerImg{
+        padding:0;
+        width: 0%;
     }
 
 
