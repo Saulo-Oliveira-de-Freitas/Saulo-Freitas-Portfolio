@@ -508,14 +508,14 @@ footer {
    
 
 
-@media(max-width: 600px){
+@media(min-width: 320px){
     header,header.sticky{
         padding: 20px 20px;
         z-index: 1000;
     }
 
     .Banner{
-        padding: 150px 50px 100px;
+        padding: 250px 50px 100px;
     }
 
     section{
@@ -533,12 +533,19 @@ footer {
     .sobreImg{
         margin-top: 2.5rem;
     }
-
-    .Projetos .Content .ProjetosBox{
-        width: 100%;
-        padding: 10px;
-        padding-left: 80px;
+    .Projetos .Content .ProjetosBox {
+        padding:100%;
+        justify-content: center;
+        align-items: center;}
+    .card{
+        width: 90%;
+        padding: 8px 7px;
+        margin-top:1.3rem;
         
+    }
+
+    .card img{
+        width:95%;
     }
 
     .Contato{
