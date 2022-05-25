@@ -281,8 +281,9 @@ max-width: 50%;
     width: 20rem;
 }
 .card__cover img{
-    width:99%;
+    width:95%;
     height: 150px;
+    overflow: hidden;
 }
 .card__content {
     /* Take available height */
@@ -482,7 +483,7 @@ footer {
      }
 
     .W50{
-        display: none
+        display: none;
        
     }
 
