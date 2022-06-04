@@ -249,6 +249,7 @@ max-width: 50%;
 .Projetos{
     background-color: #222;
     color: #fff;
+    flex-wrap: wrap;
 }
 
 
@@ -277,8 +278,10 @@ max-width: 50%;
 }
 
 .card__cover {
-    height: 13rem;
-    width: 20rem;
+    height: 12rem;
+    width: 19.9rem;
+    margin-bottom:0;
+    padding-bottom: 0;
 }
 .card__cover img{
     width:95%;
@@ -290,7 +293,7 @@ max-width: 50%;
     flex: 1;
     
 }
-.card__content p,h5{
+.card__content p,h5,.card__content h6{
     color: #111
 }
 
